@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import ParticipateCard from '../components/participate/ParticipateCard';
 import CheckIcon from '../components/icons/CheckIcon';
 import { BiSolidQuoteAltLeft } from 'react-icons/bi';
@@ -14,11 +14,15 @@ const Participate = () => {
   const [submitting, setSubmitting] = useState(false);
   const [showWarning, setShowWarning] = useState([]);
   const [accessToken, setAccessToken] = useState("");
-
+  const {id} = useParams();
   const navigate = useNavigate();
 //렌더링될 때 accesstoken?
     
+// axios('')
+
+console.log(id)
 useEffect(() => {
+
   axios.get(
     '/data/ParticipatePost.json'
     //{ headers: { Authorization: `Bearer ${accessToken}` } }

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import BoardItem from '../components/Board/BoardItem';
 
 
@@ -8,7 +9,7 @@ export default function Board2() {
   const [boardData, setboardData] = useState(data);
   const [category, setCategory] = useState('전체');
   const [postType, setPostType] = useState('all')
-  const [orderType, setOrderType] = useState('최신순')
+  const [orderType, setOrderType] = useState('createdAt')
 
 
   useEffect(()=>{
@@ -20,9 +21,8 @@ export default function Board2() {
     console.log(postType)
     console.log(orderType)
 
-    console.log()
   },[category,postType,orderType])
-  
+
   return (
     <div>
       <nav>
@@ -50,8 +50,8 @@ export default function Board2() {
 
           </ul>
           <select onChange={(e)=>setOrderType(e.target.value)} className='h-10 mr-72 mt-5'>
-            <option value="">최신순</option>
-            <option value="">포인트순</option>
+            <option value="createdAt">최신순</option>
+            <option value="point">포인트순</option>
           </select>
         </div>
        
@@ -59,10 +59,9 @@ export default function Board2() {
      
       <main>
       <div className='w-screen flex flex-col items-center'>
-        {(boardData) &&boardData.map((item) => <BoardItem key={item.id} data={item} />)}
+        {(boardData) &&boardData.map((item) => <Link to={`main/participate/${item.id}`}><BoardItem key={item.id} data={item} /></Link>)}
         <hr className='  w-line border-1 border-main_color'/>
       </div>
-
       </main>
     </div> 
   );

@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router';
 export default function HandleSearch() {
     const navigate = useNavigate()
     const [text,setText] = useState();
-
     const handleSubmit = (e) =>{
         e.preventDefault();
         navigate(`/main/search/${text}`)

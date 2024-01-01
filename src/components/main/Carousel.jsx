@@ -16,7 +16,6 @@ export default function Carousel() {
             .then((res) => res.data.items)
     }
     
-    console.log(data)
 
     const previous = useCallback(() => slickRef.current.slickPrev(), []);
     const next = useCallback(() => slickRef.current.slickNext(), []);

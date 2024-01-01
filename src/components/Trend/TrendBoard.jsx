@@ -22,7 +22,7 @@ export default function TrendBoard({data}) {
           </p>
         </main>
         <div className='mb-6 font-semibold text-main_color w-full'>
-          <span className='float-right mr-10'>트렌드 참여하기 &nbsp; &gt; </span> 
+          <Link to={`/main/participate/${data.id}`} className='float-right mr-10'>트렌드 참여하기 &nbsp; &gt; </Link> 
         </div>
     </div>
   );

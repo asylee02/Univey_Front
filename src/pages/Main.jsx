@@ -14,6 +14,7 @@ export default function Main() {
   // const {data, isLoading } = useQuery({ queryKey: ['Trend'], queryFn: dataset })
   useEffect(()=>{
     dataset();
+    test()
   },[])
 
   async function dataset(){
@@ -22,8 +23,16 @@ export default function Main() {
     .then((res)=>SetMain_data(res))
   }
 
-  function test(){
-    axios('')
+  // fetch('/health')
+  // .then((res)=>console.log(res))
+
+  async function test(){
+    console.log('start')
+    await fetch('http://15.164.216.144/health')
+    .then((res)=>console.log(res))
+    .catch((err)=>console.error(err))
+
+    console.log('end')
   }
 
   return (
@@ -62,10 +71,10 @@ export default function Main() {
       
         <div className=' w-full flex flex-col items-center h-full'>
             {main_data &&
-            main_data.filter(item => item.trend === true).map((item)=>{
+            main_data.filter(item => item.trend === true).map((item,index)=>{
               return(
-              <div className='w-screen flex flex-col items-center'>
-              <MainTrendItem key={item.id} data={item}/>
+              <div>
+              <Link to={`/main/participate/${item.id}`} className='w-screen flex flex-col items-center'><MainTrendItem key={index} data={item}/></Link>
             </div>
             )
             })
