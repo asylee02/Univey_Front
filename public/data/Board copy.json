@@ -1,0 +1,52 @@
+{
+    "surveyData": [
+        {
+            "id": 1,
+            "topic": "CHAT - GPT 활용 실태 조사",
+            "description": "과연 사람들은 얼마나 CHAT-GPT를 활용하고 있는가",
+            "category": "IT",
+            "age": [
+                20,
+                30
+            ],
+            "targetResponden": 82,
+            "target_targetResponden": 120,
+            "point": 100,
+            "hash": [
+                "대학생",
+                "얼마나써?",
+                "gpt 믿어?",
+                "#제발 해줘"
+            ]
+        }
+    ]
+}
+
+{    "status": 200,
+    "message": "~ 조회에 성공했습니다.",    
+    "data": {        
+        "content": [            {                
+            "topic": "인공지능",                
+            "description": "인공지능에 관한 설문조사",                "total_question_cnt": 3,                
+            "age": 21,                
+            "gender": "FEMALE",                
+            "currentRespondents": 10,                
+            "targetRespondents": 25,                
+            "point": 500           
+            }       
+        ],        
+        "pageable": {            
+            "sort": {                
+                "empty": false,                
+                "sorted": true,                
+                "unsorted": false           
+            },            
+            "offset": 0,            
+            "pageNumber": 0,            
+            "pageSize": 10,            
+            "paged": true,            
+            "unpaged": false       
+        },        "last": true,        "totalElements": 1,        "totalPages": 1,        "size": 10,        "number": 0,        "sort": {            "empty": false,            "sorted": true,            "unsorted": false       
+        },        "first": true,        "numberOfElements": 1,        "empty": false   
+    }
+}

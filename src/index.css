@@ -1,0 +1,55 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  width:100vw;
+  height:100vh;
+  color:#5A4978;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+.slick.arrow{
+  z-index:10
+}
+
+/* tailwind.css 또는 styles.css */
+
+.common-list-item {
+  @apply border border-text_color rounded-full w-16 h-7 justify-center flex text-sm pt-1;
+}
+.select-list-item{
+  @apply border border-text_color rounded-full w-16 h-7 justify-center flex text-sm pt-1 bg-main_color text-white;
+}
+.status{
+  @apply flex justify-center text-xs text-white ml-10 mt-2 rounded-full w-16 h-6 pt-1
+}
+
+@keyframes custom-bounce {
+  40% {
+    transform: translateY(-20px);
+  }
+}
+
+.click_highlight{
+  @apply hover:text-highligth cursor-pointer
+}
+
+.custom-bounce {
+  animation: custom-bounce 3s infinite;
+}
+
+.bg_main{
+  @apply border-main_color bg-main_color text-white
+}
+
+/* .bg_white{
+  @apply border-main_color bg-white text-main_color
+  overflow-x: hidden;
+  color:#5A4978;
+} */

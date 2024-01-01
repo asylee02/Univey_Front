@@ -1,0 +1,77 @@
+{
+    "surveyData":[
+        {
+            "id" : 1,
+            "topic" : "인공지능",
+            "description": "대학생들이 일상 속에서 인공지능을 사용하는 현황 조사",
+            "category" : "IT",
+            "deadline": "25-12-23",
+            "age": "10-19",
+            "targetRespondents": "",
+            "recommendedQuestions":[
+                {
+                    "question_num" : 1,
+                    "question" : "인공지능 사용 빈도가 어떻게 되나요?",
+                    "question_type" : "multipleChoice",
+                    "isRequired" : true,
+                    "answer" :["매우 자주",
+                    "자주",
+                    "가끔",
+                    "거의 사용하지 않음"]
+                },
+                {
+                    "question_num" : 2,
+                    "question" : "어떤 종류의 인공지능 기술을 사용하나요?",
+                    "question_type" : "multipleChoice",
+                    "isRequired" : false,
+                    "answer" :["음성인식 기술 (ex) 음성 비서",
+                    "자연어 처리 기술 (ex) 번역 앱",
+                    "이미지 인식 기술 (ex) 사진 분석",
+                    "추천 시스템 (ex) 온라인 쇼핑 사이트 추천",
+                    "기타"]
+                        
+                },
+                {
+                    "question_num" : 3,
+                    "question" : "어떤 목적으로 인공지능 기술을 사용하나요?",
+                    "question_type" : "shortAnswer",
+                    "isRequired" : true,
+                    "answer" :[
+                    ]
+                }
+            ],
+            "userQuestions":[
+                {
+                    "question_num" : 1,
+                    "question" : "인공지능 사용 빈도가 어떻게 되나요?",
+                    "question_type" : "multipleChoice",
+                    "isRequired" : true,
+                    "answer" :["매우 자주",
+                    "자주",
+                    "가끔",
+                    "거의 사용하지 않음"]
+                },
+                {
+                    "question_num" : 2,
+                    "question" : "주관식 질문 확인해 보겠습니다?",
+                    "question_type" : "shortAnswer",
+                    "isRequired" : true,
+                    "answer" :[]
+                },
+                {
+                    "question_num" : 3,
+                    "question" : "어떤 종류의 인공지능 기술을 사용하나요?",
+                    "question_type" : "multipleChoice",
+                    "isRequired" : false,
+                    "answer" :["음성인식 기술 (ex) 음성 비서",
+                    "자연어 처리 기술 (ex) 번역 앱",
+                    "이미지 인식 기술 (ex) 사진 분석",
+                    "추천 시스템 (ex) 온라인 쇼핑 사이트 추천",
+                    "기타"]
+                }
+            ]
+        }
+        
+    ]
+
+}

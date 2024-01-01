@@ -1,0 +1,41 @@
+{
+    "status": 200,
+    "message": "~ 조회에 성공했습니다.",
+    "data": {
+        "surveyData": {
+            "topic": "인공지능",
+            "description": "인공지능에 관한 설문조사",
+            "userQuestions": [
+            {
+                "question_id": 17,
+                "question_num": 1,
+                "question_type": "MULTIPLE_CHOICE",
+                "question": "평소 인공지능을 얼마나 사용하시나요?",
+                "answers": [
+                    {
+                    "answer_id": 1,
+                    "answer": "가끔"
+                    },
+                    {
+                    "answer_id": 2,
+                    "answer": "매일"
+                    },
+                    {
+                    "answer_id": 3,
+                    "answer": "한번도 사용해본 적 없음"
+                    }
+                ],
+                "required": true
+            },
+            {
+                "question_id": 19,
+                "question_num": 2,
+                "question_type": "SHORT_ANSWER",
+                "question": "불편했던 점?",
+                "answers": [],
+                "required": false
+            }
+            ]
+        }
+    }
+    }

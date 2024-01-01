@@ -1,0 +1,52 @@
+
+.react-datepicker__header {
+  text-align: center;
+  background-color: inherit;
+  border-bottom: none;
+  border-top-left-radius: inherit;
+  padding: inherit;
+  position: inherit;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+  }
+
+  .react-datepicker__input-container {
+    color: red;
+    width: 100%;
+}
+
+.react-datepicker__day-name{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #5A4978;
+}
+
+.react-datepicker__day-name:nth-child(6){
+    color: #17A1FA; /* 일요일 */
+}
+.react-datepicker__day-name:nth-child(7){
+    color:#17A1FA; /* 토요일 */
+}
+
+.react-datepicker__day{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.react-datepicker__day--selected{
+    font-weight: normal !important;
+    background-color: #F27F0C !important;
+    color:white !important;
+}
+
+.react-datepicker__day:hover {
+    background-color: #F27F0C;
+    color:white;
+}
+
+.react-datepicker__day--today {
+    font-weight: normal !important;
+    background-color: #17A1FA;
+    color:white !important;
+    border-radius: 5px;
+}
