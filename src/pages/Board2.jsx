@@ -13,7 +13,9 @@ export default function Board2() {
 
 
   useEffect(()=>{
-    fetch(`/surveys/list?category=${category}&postType=${postType}&orderTpye=${orderType}`)
+    // fetch(`/surveys/list?category=${category}&postType=${postType}&orderTpye=${orderType}`)
+    fetch('/data/Board')
+    .then((res)=>res.json())
     .then((res)=>res.data)
     .then((res)=>setData(res))
 

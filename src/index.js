@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       { path: 'main/my', element: <My/> },
       { path: 'main/trend', element: <Trend/> },
       { path: 'main/search/:value', element: <Search/> },
-      { path: 'user/kakao/callback', element: <LoginHandle/>},
+      { path: 'users/kakao/callback', element: <LoginHandle/>},
       { path: 'main/create/qr', element: <QRcode/>},
       { path: 'main/result', element: <Result/>},
       { path: "main/create", element: <Create /> },
