@@ -2,19 +2,17 @@
 
 <p align="center">
   <br>
-  ![메인 디자인](https://github.com/asylee02/Univey_Front/assets/87488288/5632e479-c4e1-4dfc-ac49-a04679e15fd0)
+  <img src="https://github.com/asylee02/Univey_Front/assets/87488288/b1599a13-8416-4076-a415-1a8bdcdb7f99">
   <br>
 </p>
-
-목차
 
 ## 프로젝트 소개
 
 <p align="justify">
 프로젝트 개요/동기
-  대학생을 위한 설문조사 웹 사이트
 </p>
-
+<b>대학생을 위한 설문조사 사이트</b>
+ 
 <p align="center">
 GIF Images
 </p>
