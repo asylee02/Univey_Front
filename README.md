@@ -1,24 +1,61 @@
-# Univey_Front
+# Univey
 
-<br></br>
-Commit Convention
+<p align="center">
+  <br>
+  ![메인 디자인](https://github.com/asylee02/Univey_Front/assets/87488288/5632e479-c4e1-4dfc-ac49-a04679e15fd0)
+  <br>
+</p>
 
----
+목차
 
-| 작성 | 설명 |
-| --- | --- |
-| [FEAT]#이슈번호 내용 | 기능 추가 |
-| [FIX]#이슈번호 내용 | 버그 및 오류 수정 |
-| [DOCS]#이슈번호 내용 | 문서 수정 |
+## 프로젝트 소개
 
----
+<p align="justify">
+프로젝트 개요/동기
+  대학생을 위한 설문조사 웹 사이트
+</p>
 
-Branch Convention
+<p align="center">
+GIF Images
+</p>
 
----
-| 작성             | 설명              |
-|----------------|-----------------|
-| main           | master 브랜치      |
-| develop        | main 서브 브랜치     |
-| feat/#이슈번호-기능명 | 기능 추가용 feat 브랜치 |
-| fix/#이슈번호-브랜치명 | 기능 수정용 fix 브랜치  |
+<br>
+
+## 기술 스택
+
+| JavaScript | TypeScript |  React   |  Node   |
+| :--------: | :--------: | :------: | :-----: |
+|   ![js]    |   ![ts]    | ![react] | ![node] |
+
+<br>
+
+## 구현 기능
+
+### 기능 1
+
+### 기능 2
+
+### 기능 3
+
+### 기능 4
+
+<br>
+
+## 배운 점 & 아쉬운 점
+
+<p align="justify">
+
+</p>
+
+<br>
+
+## 라이센스
+
+MIT &copy; [NoHack](mailto:lbjp114@gmail.com)
+
+<!-- Stack Icon Refernces -->
+
+[js]: /images/stack/javascript.svg
+[ts]: /images/stack/typescript.svg
+[react]: /images/stack/react.svg
+[node]: /images/stack/node.svg
